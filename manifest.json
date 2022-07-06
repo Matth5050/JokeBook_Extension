@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "JokeBook",
+    "description": "Have a laugh with a joke or quote",
+    "version": "1.0.0",
+    "icons": {"128": "./images/photos/logo-128.png"},
+    "browser_action": {
+      "default_icon": "./images/photos/logo-19.png",
+      "default_popup": "index.html"
+    },
+    "permissions": ["activeTab"]
+  }
