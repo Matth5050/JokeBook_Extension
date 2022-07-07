@@ -7,9 +7,8 @@ $(document).ready(function() {
     }
     fetch('./jokes.json')
     .then(results => results.json())
-    .then(data => $('.joke-output').text(data.results[test].Joke));
+    .then(data => $('.output').text(data.results[test].Joke));
     let test = getRandomInt();
-    
 });
   
   $('#kanye').click(function() {
@@ -43,13 +42,13 @@ async function makeApiCall() {
 }
 
 function clearChucksFields() {
-  $('.chucksOutput').text("");
+  $('.oututput').text("");
 }
 
 function getChucksElements(response) {
   if (response.value) {
     console.log(response.value)
-    $('.chucksOutput').text(`${response.value} `);
+    $('.output').text(`${response.value} `);
   } else {
     $('.chucksShowErrors').text(`There was an error: ${response}`);
   }
